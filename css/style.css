@@ -16,7 +16,6 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: white;
     padding: var(--padding-container);
 }
 
@@ -27,6 +26,7 @@ body{
     max-height: 800px;
     position: relative;
     display: grid;
+    grid-template-rows: 100px 1fr;
 
 }
 
