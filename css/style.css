@@ -3,3 +3,33 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+
+}
+
+.nav{
+    --padding-container:0;
+}
