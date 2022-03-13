@@ -126,6 +126,15 @@ body{
     border-radius: 32px;
 }
 
+.tics {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
 /*About*/
 .about {
     text-align: center;
