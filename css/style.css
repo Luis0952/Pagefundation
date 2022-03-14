@@ -213,3 +213,18 @@ background-position: 0 0,12px 12px;
     width: 100%;
     display: block;
 }
+
+/*Donar*/
+
+.donar{
+text-align: center;
+}
+
+.donar_table{
+padding-top: 60px;
+display: flex;
+flex-wrap: wrap;
+gap: 2.5em;
+justify-content: space-evenly;
+align-items: center;
+}
