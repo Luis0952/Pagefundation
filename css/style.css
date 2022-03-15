@@ -338,3 +338,61 @@ align-items: center;
     width: 90%;
     cursor: pointer;
 }
+/*Formularios de contacto*/
+.form_input{
+    font-family: inherit;
+    font-size: 1rem;
+     padding: .8em 1em;
+     outline: none;/*Para quitar los bordes*/
+     border: none;/*Para quitar los bordes*/
+     border: 1px solid #bbb0b0;
+     border-radius: 0.5em; /*Para colocar los border redondeados a los cuadros de entrada de texto*/
+}
+
+.form_contact{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form_contacto{
+/*background-color: #FFF;*/
+margin: auto;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1.9rem;/*1 Rem es = a 16px por defecto*/
+    margin-bottom: .4em;
+}
+
+.form_contacto_container{
+    width: 100%;
+    display: grid;/*Para que ponga todos los elementos del mismo tamaño*/
+    gap: 1em;/*Agrega espacio entre los elementos*/
+    grid-auto-columns: 100%;/*para que las columnas siempre ocupen el 100%*/
+}
+
+.form_input--message{
+    resize: none;/*Como el cuadro del mensaje tiene la capacidad de agrandarse aun por fuera de su contenedor,
+    este atributo se lo impide*/
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form_cta{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #089fe0;
+    color: #FFF;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .3em;
+    cursor: pointer;
+    font-weight: 400;
+
+}
