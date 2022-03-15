@@ -173,15 +173,17 @@
         </section>
 
         <section class="contact container">
+           
             <h1 class="subtitle">¿Te gustaría contactarnos?</h1>
             <section class="form_contact">
                 <h2 class="subtitle_1">Diligencia este formulario</h2>
-                <form class="form_contacto">
+                <form class="form_contacto" action="correo.php"
+                method="POST">
                     <div class="form_contacto_container">
                         <h2 class="form_contacto_container">Escribenos:</h2>
-                        <input type="text" class="form_input" placeholder="Nombre:">
-                        <input type="email" class="form_input" placeholder="Email:">
-                        <textarea name="" id="" cols="30" rows="10" class="form_input form_input--message" placeholder="Mensaje:"></textarea>
+                        <input type="text" class="form_input" placeholder="Nombre:" name="name">
+                        <input type="email" class="form_input" placeholder="Email:" name="email">
+                        <textarea name="" id="" cols="30" rows="10" class="form_input form_input--message" placeholder="Mensaje:" name="message"></textarea>
                         <input type="submit" value="Enviar" class="form_cta">
                     </div>
                 </form>
