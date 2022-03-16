@@ -177,22 +177,86 @@
             <h1 class="subtitle">¿Te gustaría contactarnos?</h1>
             <section class="form_contact">
                 <h2 class="subtitle_1">Diligencia este formulario</h2>
-                <form class="form_contacto" action="correo.php"
+                <form id="form" class="form_contacto" action="correo.php"
                 method="POST">
                     <div class="form_contacto_container">
                         <h2 class="form_contacto_container">Escribenos:</h2>
-                        <input type="text" class="form_input" placeholder="Nombre:" name="name">
-                        <input type="email" class="form_input" placeholder="Email:" name="email">
-                        <textarea name="" id="" cols="30" rows="10" class="form_input form_input--message" placeholder="Mensaje:" name="message"></textarea>
+                        <input type="text" class="form_input" placeholder="Nombre:" name="nombre" required>
+                        <input type="email" class="form_input" placeholder="Email:" name="email" required>
+                        <textarea id="" cols="30" rows="10" class="form_input form_input--message" placeholder="Mensaje:" name="mensaje" required></textarea>
                         <input type="submit" value="Enviar" class="form_cta">
                     </div>
                 </form>
+                <!-- <a href="mailto:luchorosalesc6@gmail.com" id="botoncito"></a> -->
 
             </section>
         </section>
 
     </main>
     <script src="./js/slider.js"></script>
+    <!-- <script>
+        const $form=document.querySelector('#form')
+        const $buttonMailto=document.querySelector('#botoncito')
+
+        $form.addEventListener('submit', handleSubmit)
+        function handleSubmit(event){
+            event.preventDefault()
+            const form=new FormData(this)
+            // console.log(form.get('name'))
+            $buttonMailto.setAttribute('href', `mailto:luchorosalesc6@gmail.com?subject=${form.get('name')}  ${form.get('email')}&body=${form.get('mensaje')}`)
+            $buttonMailto.click()
+
+        }
+    </script> -->
+    
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Fundación SION Emprender Social</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Inicio</a>
+                    </li>
+    
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Acerca de Nosotros</a>
+                    </li>
+    
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Proyectos</a>
+                    </li>
+    
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Contactos</a>
+                    </li>
+    
+                    <li class="nav_items">
+                        <a href="#" class="nav_links">Historias de vida</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Fundación SION Emprender Social</h3>
+
+        </section>
+    </footer>
 
 </body>
 </html>
