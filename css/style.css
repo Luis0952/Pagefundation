@@ -33,6 +33,9 @@ body{
 
 .nav{
     --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -409,11 +412,11 @@ margin: auto;
     opacity: 0;
 }
 
-.form{
+/* .form{
     margin-bottom: 30px;
     width: 60%;
     margin: 0 auto;
-}
+} */
 
 
 /*Footer*/
@@ -427,6 +430,11 @@ margin: auto;
     font-size: 2rem;
     margin-bottom: 30px;
 
+}
+
+
+.footer__title, .footer__newsletter{
+    color: #fff;
 }
 
 .nav--footer{
@@ -452,14 +460,11 @@ margin: auto;
     overflow: hidden;
 }
 
-.footer__title, .footer__newsletter{
-    color: #fff;
-}
 
 .footer__container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+     align-items: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 60px;
 }
@@ -483,4 +488,11 @@ margin: auto;
 
 .nav_items{
 margin-left: auto;    
+}
+
+.nav--footer{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
 }
