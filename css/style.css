@@ -446,13 +446,15 @@ margin: auto;
 
 }
 
-.nav__link--footer{
-    display: flex;
+.nav__link--footer .nav_links{
+     
+    display: inline-block;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
+    padding: 5px;
 
-}
+} 
 
 .footer__inputs{
     margin-top: 10px;
@@ -482,8 +484,16 @@ margin: auto;
 }
 
 .footer__submit{
-    margin-right: auto;
-    margin-left: 0;
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #2091f9;
+    border: none;
+    font-size: 1rem;
+    color:#FFF;
+    border-radius: 6px;
+
 }
 
 .nav_items{
@@ -496,3 +506,20 @@ margin-left: auto;
     gap: 1em;
     grid-auto-flow: row;
 }
+
+.footer__copy{
+    --padding-container:30px 0;
+    text-align: center;
+    color:#FFF;
+}
+
+.footer__copyright{
+    font-weight:300;
+}
+
+.footer__icons{
+    display:inline-flex;    
+}
+
+
+ 
